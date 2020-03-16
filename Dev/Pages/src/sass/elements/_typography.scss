@@ -31,7 +31,7 @@ h1 {
         line-height: 1.32;
     }
 
-    font-family: "ProximaNova",
+    font-family: "Roboto",
     sans-serif;
     font-weight: 700;
     line-height: 1.33;
@@ -45,7 +45,7 @@ h2 {
         line-height: 1.32;
     }
 
-    font-family: "ProximaNova",
+    font-family: "Roboto",
     sans-serif;
     font-weight: 700;
     line-height: 1.33;
@@ -60,7 +60,7 @@ h3 {
         line-height: 1.33;
     }
 
-    font-family: "ProximaNova",
+    font-family: "Roboto",
     sans-serif;
     font-weight: 700;
     line-height: 1.33;
@@ -74,7 +74,7 @@ h4 {
         font-weight: 700;
     }
 
-    font-family: "ProximaNova",
+    font-family: "Roboto",
     sans-serif;
     font-weight: 600;
 }
@@ -87,7 +87,7 @@ h5 {
 
     }
 
-    font-family: 'Starling',
+    font-family: 'Roboto',
     sans-serif;
     font-style: italic;
     letter-spacing: 0.18px;
@@ -96,7 +96,7 @@ h5 {
 }
 
 .btn {
-    font-family: "ProximaNova";
+    font-family: "Roboto";
     font-weight: 600;
     @include font-size(16px);
 
@@ -106,7 +106,7 @@ h5 {
 }
 
 .btn-text {
-    font-family: "ProximaNova";
+    font-family: "Roboto";
     font-weight: 600;
     @include font-size(14px);
 
@@ -116,7 +116,7 @@ h5 {
 
     &:hover {
         text-decoration: none;
-        color: $primary-pink;
+        // color: $primary-pink;
     }
 
     &--uppercase {
