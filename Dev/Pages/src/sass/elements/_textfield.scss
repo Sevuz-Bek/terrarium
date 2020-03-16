@@ -1,0 +1,111 @@
+$invalid-color: #de0f16;
+
+@mixin textfield($border-color: #000000, $label-color: #ffffff) {
+    position: relative;
+
+    input {
+        width: 100%;
+        background-color: transparent;
+        height: 48px;
+        border: 1px solid $border-color;
+        padding: 8px;
+        color: $border-color;
+        font-size: 14px;
+        // font-weight: 600;
+        position: relative;
+        z-index: 1;
+
+
+        @include media-breakpoint-up(lg) {
+            font-size: 18px;
+            height: 58px;
+        }
+
+        &:focus {
+            outline: 0;
+            border: 2px solid $primary-pink;
+        }
+
+    }
+
+    label {
+        position: absolute;
+        top: 13px;
+        left: 0;
+        margin: 0px;
+        padding: 0px 20px;
+
+        line-height: 1.75;
+        letter-spacing: 0.5px;
+        color: $border-color;
+        transition: all 0.3s ease;
+        z-index: 0;
+
+        font-size: 14px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 18px;
+        }
+    }
+
+    input:focus+label,
+    ul+label,
+    &--filled label {
+        top: -11px;
+        left: 20px;
+        padding: 0 5px;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        z-index: 1;
+        background-color: $label-color;
+    }
+
+
+    &__text {
+        padding: 0 12px;
+        font-size: 11px;
+        display: block;
+        min-height: 15px;
+        padding-bottom: 4px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 14px;
+        }
+
+        &--invalid {
+            display: none;
+            color: $invalid-color;
+        }
+    }
+
+
+    .is-invalid {
+
+
+        border-color: $invalid-color;
+
+        &:focus {
+            border: 2px solid $invalid-color;
+        }
+    }
+
+    .is-invalid~label {
+        color: $invalid-color;
+    }
+
+    .is-invalid~&__text {
+        display: none;
+    }
+
+    .is-invalid~&__text--invalid {
+        display: block;
+    }
+
+
+
+
+
+
+
+
+}

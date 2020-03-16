@@ -1,0 +1,21 @@
+mixin teaser(imageUrl, title, description)
+  a.teaser(href='#')
+    .teaser__image(style="background-image: url('"+ imageUrl + "')")
+    .teaser__body
+      h3.teaser__headline= title
+      .teaser__description= description
+
+mixin teaser-event(imageUrl, description, title, date)
+  a.teaser-event(href='#')
+    .teaser-event__image(style="background-image: url('"+ imageUrl + "')")
+    .teaser-event__body
+      .teaser-event__category= description
+      .teaser-event__date= date
+      h3.teaser-event__headline= title
+
+mixin teaser-blog(imageUrl, description, title)
+  a.teaser(href='#')
+      .teaser__image(style="background-image: url('"+ imageUrl + "')")
+      .teaser__body
+        .teaser__description= description
+        h3.teaser__headline= title

@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "ProximaNova";
+    src:url("#{$font-path}/proxima-nova-bold.woff2") format("woff2"),
+    url("#{$font-path}/proxima-nova-bold.woff") format("woff"),
+    url("#{$font-path}/proxima-nova-bold.otf") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: "ProximaNova";
+    src:url("#{$font-path}/proxima-nova-semibold.woff2") format("woff2"),
+    url("#{$font-path}/proxima-nova-semibold.woff") format("woff"),
+    url("#{$font-path}/proxima-nova-semibold.otf") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src:url("#{$font-path}/proxima-nova-light.woff2") format("woff2"),
+    url("#{$font-path}/proxima-nova-light.woff") format("woff"),
+    url("#{$font-path}/proxima-nova-light.otf") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Starling";
+    src:url("#{$font-path}/starling-book.woff2") format("woff2"),
+    url("#{$font-path}/starling-book.woff") format("woff"),
+    url("#{$font-path}/starling-book.otf") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Starling";
+    src:url("#{$font-path}/starling-book-italic.woff2") format("woff2"),
+    url("#{$font-path}/starling-book-italic.woff") format("woff"),
+    url("#{$font-path}/starling-book-italic.otf") format("opentype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 300;
+}

@@ -1,0 +1,86 @@
+.footer {
+    background-color: #222222;
+    color: #ffffff;
+
+    &__content {
+        @include make-container();
+
+        @include media-breakpoint-up(md) {
+            @include make-container-max-widths();
+        }
+
+        &-inner {
+            @include make-row();
+
+            padding-top: 75px;
+            padding-bottom: 45px;
+
+            @include media-breakpoint-up(md) {
+                padding-top: 160px;
+                padding-bottom: 90px;
+            }
+        }
+    }
+
+    &__column {
+        @include make-col-ready();
+
+        &--list {
+            @include make-col(12);
+
+            @include media-breakpoint-up(md) {
+                @include make-col(4)
+            }
+        }
+
+        &--social {
+            @include make-col(12);
+
+            @include media-breakpoint-up(lg) {
+                @include make-col(4)
+            }
+        }
+
+        &--newsletter {
+            @include make-col(12);
+
+            @include media-breakpoint-up(md) {
+                @include make-col(6);
+            }
+
+            @include media-breakpoint-up(lg) {
+                @include make-col(8)
+            }
+        }
+
+        &--logos {
+            @include make-col(12);
+        }
+
+        &--disclaimer {
+            @include make-col(12);
+
+            @include media-breakpoint-up(lg) {
+                @include make-col(8)
+            }
+        }
+
+        &--moto {
+            @include make-col(12);
+
+            @include media-breakpoint-up(lg) {
+                @include make-col(4)
+            }
+        }
+    }
+}
+
+.blog {
+    .footer__column--disclaimer {
+        order: 13;
+
+        @include media-breakpoint-up(lg) {
+            order: 0;
+        }
+    }
+}

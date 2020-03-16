@@ -1,0 +1,30 @@
+// $colors 
+$primary: #222222;
+$secondary: #626262;
+$primary-pink: #fe9b96;
+$primary-pink-light: #fff4f3;
+$background-grey: #f7f7f7;
+
+
+// no border radius
+$border-radius: 0;
+// grid & container width 
+$grid-gutter-width: 20px;
+$grid-breakpoints: (xxs: 0, xs: 321px, md: 768px, lg: 1200px);
+$container-max-widths: (md: 720px, lg: 1220px);
+
+// Custom fonts 
+$font-path: "../fonts" !default;
+
+// Hambergers
+
+$hamburger-padding-x : 0px !default;
+$hamburger-padding-y : 0px !default;
+$hamburger-layer-width : 24px !default;
+$hamburger-layer-height : 3px !default;
+$hamburger-layer-spacing : 5px !default;
+$hamburger-layer-color : #000 !default;
+$hamburger-layer-border-radius : 0px !default;
+$hamburger-hover-opacity : 0.7 !default;
+$hamburger-active-layer-color : $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;

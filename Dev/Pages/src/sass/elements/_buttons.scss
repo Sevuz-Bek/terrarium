@@ -1,0 +1,81 @@
+$btn-padding-y: 14px;
+$btn-padding-x: 12px;
+$btn-font-size: 14px;
+$btn-line-height: 1.37;
+
+$btn-padding-y-lg: 17px;
+$btn-padding-x-lg: 12px;
+$btn-font-size-lg: 18px;
+$btn-line-height-lg: 1.34;
+
+
+$btn-font-weight: 600;
+
+
+
+.btn {
+    display: inline-block;
+
+    &-primary {
+        background-color: $primary-pink;
+        font-family: $btn-font-family;
+        font-weight: $btn-font-weight;
+        text-transform: uppercase;
+        border: 1px solid;
+        border-color: $primary-pink;
+
+
+        @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+
+        @include media-breakpoint-up(lg) {
+            @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius);
+        }
+
+        @include transition($btn-transition);
+
+        @include hover {
+            color: #fff;
+            background-color: $primary;
+            text-decoration: none;
+            border-color: #fff;
+        }
+
+
+    }
+
+    &-secondary {
+        background-color: white;
+        font-family: $btn-font-family;
+        font-weight: $btn-font-weight;
+        text-transform: uppercase;
+        border: 1px solid;
+        border-color: $primary;
+
+        @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+
+        @include media-breakpoint-up(lg) {
+            @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius);
+        }
+
+        @include transition($btn-transition);
+
+        @include hover {
+            color: $white;
+            background-color: $primary;
+            text-decoration: none;
+            border-color: $primary;
+        }
+    }
+
+    &--icon {
+        padding-left: 14px;
+
+        .mdi {
+            top: 5px;
+            position: relative;
+            font-size: 22px;
+            margin-right: 7px;
+            line-height: 10px;
+        }
+    }
+}

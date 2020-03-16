@@ -1,0 +1,84 @@
+.accordion {
+  @include media-breakpoint-up(md) {
+    &__container {
+
+
+      @include make-container();
+
+      @include make-container-max-widths();
+
+
+      &-inner {
+        @include make-row();
+      }
+    }
+
+    @include make-col-ready();
+  }
+
+  &__section {
+
+    border-bottom: 1px solid #c4c4c4;
+
+    &:first-child {
+      border-top: 1px solid #c4c4c4;
+    }
+
+    header {
+      position: relative;
+      padding: 20px 80px 20px 0;
+      cursor: pointer;
+
+      h4 {
+        text-transform: uppercase;
+
+        @include media-breakpoint-down(md) {
+          padding-left: 20px;
+        }
+      }
+    }
+
+    &--active header h4 {
+      font-weight: 600;
+    }
+
+    &-toggle {
+      width: 60px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+
+      span {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.75rem;
+        color: #7f7f8b;
+      }
+
+      .mdi-chevron-up {
+        display: inline-block;
+        transform: rotate(180deg);
+        transition: all 0.25s ease-in-out;
+      }
+    }
+
+    &--active #{&}-toggle {
+
+      .mdi-chevron-up {
+        transform: rotate(0deg);
+      }
+    }
+
+    &-body {
+      display: none;
+      padding: 10px 0px;
+
+      @include media-breakpoint-down(md) {
+        padding: 0 20px;
+      }
+    }
+  }
+}
